@@ -1,5 +1,3 @@
-
-
 <script language="JavaScript">
   function psn()  
    {
@@ -31,7 +29,7 @@
 <head>
     <title>.::LINTAR MAHASISWA::.</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <link href="itrmhz/css/lintarmhz.css" type="text/css" rel="stylesheet" />
+    <link href="../ltrmhz/lintarmhz.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../ltrmhz/simpletree.css" />
 </head>
 <body>
@@ -302,7 +300,7 @@ float:left;
             
             </div>
 			<div style="margin-top:15px;font-size:12px;align:justify;"> 
-			 <img src="itrmhz/mhz_images/qrcode_maba2023.jpeg" width="90px" Height="90px"/>
+			 <img src="ltrmhz/mhz_images/qrcode_maba2023.jpeg" width="90px" Height="90px"/>
 			 <br>
 			  <a href="http://bit.ly/PENDAFTARANPMBUNTAR2023" target="_blank">http://bit.ly/PENDAFTARANPMBUNTAR2023</a>
             </div>

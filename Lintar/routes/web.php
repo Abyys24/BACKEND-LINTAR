@@ -6,28 +6,40 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/perkuliahan', function () {
+    return view('perkuliahan');
+});
+
+Route::get('/akademik', function () {
+    return view('akademik');
 });
 
 Route::get('/konsul', function () {
     return view('konsul');
 });
 
-Route::get('/uas_online', function () {
-    return view('uas');
+Route::get('/uasonline', function () {
+    return view('uasonline');
 });
 
-Route::get('/mbkm', function () {
-    return view('mbkm');
+Route::get('/beasiswa', function () {
+    return view('beasiswa');
 });
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/skpi_new', function () {
+    return view('skpi_new');
 });
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/utsonline', function () {
+    return view('utsonline');
+});
+
+Route::get('/skpi_new', function () {
+    return view('skpi_new');
+});
+
+Route::get('/skpi_new', function () {
+    return view('skpi_new');
 });
 
 

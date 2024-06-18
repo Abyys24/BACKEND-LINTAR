@@ -13,7 +13,7 @@
 </script>
 
 
-<script type="text/javascript" src="/ltrmhz/js/simpletreemenu.js">
+<script type="text/javascript" src="/ltrmhz/simpletreemenu.js">
 
 /***********************************************
 * Simple Tree Menu- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -29,13 +29,13 @@
 
     <title>.::LINTAR MAHASISWA::.</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <link href="itrmhz/css/lintarmhz.css" type="text/css" rel="stylesheet">
+    <link href="ltrmhz/css/lintarmhz.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/ltrmhz/css/simpletree.css">
 <style type="text/css">.fancybox-margin{margin-right:17px;}</style></head>
 <body style="">
     
     <!-- Start Fungsi Page On Load-->
-    <script type="text/javascript" src="itrmhz/js/jquery-1.10.js"></script>
+    <script type="text/javascript" src="ltrmhz/js/jquery-1.10.js"></script>
     <style type="text/css">
         #overlay {
             position: fixed;
@@ -300,7 +300,7 @@ float:left;
             
             </div>
 			<div style="margin-top:15px;font-size:12px;align:justify;"> 
-			 <img src="itrmhz/mhz_images/qrcode_maba2023.jpeg" width="90px" height="90px">
+			 <img src="ltrmhz/mhz_images/qrcode_maba2023.jpeg" width="90px" height="90px">
 			 <br>
 			  <a href="http://bit.ly/PENDAFTARANPMBUNTAR2023" target="_blank">http://bit.ly/PENDAFTARANPMBUNTAR2023</a>
             </div>
@@ -329,11 +329,11 @@ float:left;
 
 			
        
-			<input type="image" name="btn365" id="btn365" src="itrmhz/mhz_images/icon_365.jpg" align="absmiddle" style="height:100px;">
+			<input type="image" name="btn365" id="btn365" src="ltrmhz/mhz_images/icon_365.jpg" align="absmiddle" style="height:100px;">
                 
 			
-			<input type="image" name="btnteams" id="btnteams" src="itrmhz/mhz_images/icon_teaml.jpg" align="absmiddle" style="height:100px;">
-			<input type="image" name="btnkrrs" id="btnkrrs" src="itrmhz/mhz_images/icon_krrs.png" align="absmiddle" style="height:100px;">
+			<input type="image" name="btnteams" id="btnteams" src="ltrmhz/mhz_images/icon_teaml.jpg" align="absmiddle" style="height:100px;">
+			<input type="image" name="btnkrrs" id="btnkrrs" src="ltrmhz/mhz_images/icon_krrs.png" align="absmiddle" style="height:100px;">
 			<!--<a href="http://krrs.untar.ac.id/ltrmhz/index.aspx?1f0eb0985870635e62fa2f68a223b173=5e5a45473cf8cd19267cd0d9acb1da28&44267d378a8d059780f59c3e5b996b73=535230063" ><img src="http://lintar.untar.ac.id/ltrmhz/mhz_images/icon_krrs.png" height="100px" style="float:left;margin-right:5px;"></a>-->
             <br><br>
 			
@@ -379,8 +379,8 @@ float:left;
 </div>
 </form>
 </center>
-<script type="text/javascript" language="javascript" src="itrmhz/js/jquery-1.10.js"></script>
-<script type="text/javascript" language="javascript" src="itrmhz/js/jquery.fancybox.js"></script>
+<script type="text/javascript" language="javascript" src="ltrmhz/js/jquery-1.10.js"></script>
+<script type="text/javascript" language="javascript" src="ltrmhz/js/jquery.fancybox.js"></script>
 <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen">
 <script type="text/javascript">
     $(document).ready(function () {

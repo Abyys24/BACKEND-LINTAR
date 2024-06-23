@@ -23,7 +23,7 @@
   <div id="main">
         <div id="header">
 		<br>  
-		Selasa, 18 Juni 2024
+		Minggu, 23 Juni 2024
 	</div>
 	<div id="judul">
           <b>LINTAR MAHASISWA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
@@ -92,31 +92,7 @@
 			 </td>
 		     <td width="80%">
 	           <div id="isimu_knn">
-                   <link href="../css/jquery-ui.css" rel="stylesheet" />
-<script src="../js/jquery.ui.datepicker-id.js"></script>
-<script src="../js/jquery-1.8.2.js"></script>
-<script src="../js/jquery-ui-1.9.0.custom.js"></script>
-
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_awal").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
-    });
-</script>
-
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_akhir").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
-    });
-</script>
-
+                   
 
 <script language="JavaScript">
   function psn()  
@@ -126,13 +102,57 @@
 </script>
 
 
+<script language="JavaScript">
+    function psnsimpan() {
+        return confirm("Anda Yakin ?");
+    }
+</script>
+
+
+<script type="text/javascript">
+
+  function psn()  
+   {
+      return confirm("Anda Yakin ?");
+   }
+
+
+function js_clock(){
+	
+	var clock_time = new Date();
+	var clock_hours = clock_time.getHours();
+	var clock_minutes = clock_time.getMinutes();
+	var clock_seconds = clock_time.getSeconds();
+	var clock_suffix = "";
+	
+
+	if (clock_hours < 10){
+clock_hours = "0" + clock_hours;
+	}
+
+	if (clock_minutes < 10){
+clock_minutes = "0" + clock_minutes;
+	}
+
+	if (clock_seconds < 10){
+clock_seconds = "0" + clock_seconds;
+	}
+
+	var clock_div = document.getElementById('js_clock');
+	clock_div.innerHTML = clock_hours + ":" + clock_minutes + ":" + clock_seconds + " " + clock_suffix;
+	setTimeout("js_clock()", 1000);
+}
+
+js_clock();
+</script>
+
 <center>
-<form method="post" action="./konsul_psikologi.aspx" id="ctl00">
+    <form method="post" action="./rem_ajukanmhs.aspx" id="ctl00">
 <div class="aspNetHidden">
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTIyOTM0NDEwOQ9kFgJmD2QWBAIBD2QWAgIGDxBkDxYBZhYBEAUOLS1UaWRhayBBZGEgLS0FATBnZGQCAw8PFgIeB1Zpc2libGVoZBYCAgEPDxYCHgRUZXh0ZWRkZNEn6lxDEvDIpb1gTKjPhfZDbvH4tL7CVFBrnlyPrLFt" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
 </div>
 
 <script type="text/javascript">
@@ -154,75 +174,46 @@ function __doPostBack(eventTarget, eventArgument) {
 
 <div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="392DB247" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA23DLarkVDhMNmQcuZmDaKysbbCQGPoadihSGgXxueJ/LpK31NlVSnClBvCk6e5DiQKr7N9RG7ZGoZbEOGklTTKV2vl8pRjXNov3SqYmOMQu1drnpZJd0L5e0EGp92KfWjOyf7fJ3+Msv45BzYDOiys0TaP2htkFIn4avcjRH8w4E01n0GCjr00O3cJ2rXOYWwAxKWD7wWAzCMJHKgnsq56lYDNBX4s0F2CUjyiUoSSv6FgE8XHRdSiCZjRtWdcEer0c1BkQ67ftA0YqHnrjfao7B5mBW4RBc+8Hk4DIzyLRBe3VUx8MYMc3p6O6QJ+dF8=" />
-</div>  
-<div id="isimu_knn_jdl">
- <b>KONSULTASI PSIKOLOGI - KONSULTASI ONLINE</b>
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C30D3FD3" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAT1YwbYBLPCPiWPAWTvNbtr6I7qwBL6vVJMZk2m2epfU1HNSKjYpsm1k/FP7oPA6/Rz18aTJcLOxji2khsQCoOfKyR3pD0CUxM1b/sjczTqDhUVJHOzBGiwd4Ixvhboyzg=" />
 </div>
-<div id="isimu_knn_isi">
-  <div id="Pnlls" style="width:100%;">
+        <div id="isimu_knn_jdl">
+            <b>REMEDIAL - AJUKAN REMEDIAL</b>
+        </div>
+        <div id="isimu_knn_isi">
+           <hr />
+           <span id="lbl_infopribadi" style="color:Black;font-size:12px;font-weight:normal;"><table width='80%' cellpadding='2' cellspacing='1' style='font-size:12px'><tr bgcolor='#666666' color='#FFFFFF'><td colspan='3' >Informasi Pribadi</td></tr><tr><td bgcolor='#669999' width='175px'>Nama</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>DUNCAN ARIEL</td></tr><tr><td bgcolor='#669999' width='175px'>Nomor Pokok Mahasiswa</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>535230063</td></tr><tr><td bgcolor='#669999' width='175px'>Fakultas/Program Studi</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>TEKNOLOGI INFORMASI / TEKNIK INFORMATIKA       </td></tr><td bgcolor='#669999' width='175px'>Alamat</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>TOWN HOUSE EMERALD NO 35 BGM PIK                                                                     KOTA JAKARTA UTARA                                 14470</td></tr><td bgcolor='#669999' width='175px'>Telepon/HP</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>-               /081283961889   </td></tr><td bgcolor='#669999' width='175px'>Email</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>duncan.535230063@stu.untar.ac.id                  </td></tr></table></span>
+           <br />
+           <div id="Pnl_ls" style="width:100%;">
 	
-   	<hr />
-	<h2>Layanan ini hanya untuk konsultasi masalah psikologis.<br> 
-	Untuk konsultasi akademik, silakan melalui Menu Konsultasi PA atau menghubungi Prodi masing-masing</h2>
-    <input type="submit" name="btnbaru" value="Konsultasi Baru" id="btnbaru" />
-    <input type="submit" name="btndetail" value="Lihat Riwayat" id="btndetail" />
-    <hr />
-    	<table width="100%" style="font-size:12px" cellpadding="2" cellspacing="2">
-           
-           <tr>
-               <td class="td-kiri">Cari Kata Kunci</td>
-               <td class="td-kanan">
-                   <input name="txt_cari" type="text" maxlength="50" id="txt_cari" name="txt_cari" placeholder="Kata Kunci" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri">Cari Tanggal</td>
-               <td class="td-kanan">
-                   <input name="tgl_awal" type="text" maxlength="50" id="tgl_awal" name="tgl_awal" placeholder="Tanggal Awal" /> s.d
-                   <input name="tgl_akhir" type="text" maxlength="50" id="tgl_akhir" name="tgl_akhir" placeholder="Tanggal Akhir" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri"></td>
-               <td class="td-kanan">
-                   <input type="submit" name="btncari" value="Cari" id="btncari" style="width:75px;" />
-               </td>
-           </tr>
-           <tr>
-              <td class="td-kiri">Halaman</td>
-              <td class="td-kanan">
-   		        <select name="drophal" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;drophal\&#39;,\&#39;\&#39;)&#39;, 0)" id="drophal" style="font-family:Verdana;font-size:12px;">
-		<option value="0">--Tidak Ada --</option>
+              <input type="submit" name="btnajuan" value="Ajukan/Batalkan" id="btnajuan" />
+              <span id="lbl_infodaftar" style="color:Black;font-size:12px;font-weight:normal;">Pendaftaran mulai tanggal 14/12/2023 Sampai dengan tanggal 23/12/2023 23:10:00</span>
+              <hr />
+               <table style='font-size:12px;width:75%;' cellspacing="2px" border="0px" width="75%">
+               <tr >
+                <td align="left" valign="top" bgcolor="#c0c0c0">Tahun Akademik Remedial</td>
+                <td align="center" valign="top" bgcolor="#666666">:</td>
+                <td align="left" valign="top" bgcolor="#666666">
+                   <select name="dropthakdk" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;dropthakdk\&#39;,\&#39;\&#39;)&#39;, 0)" id="dropthakdk">
+		<option selected="selected" value="20231">20231-Semester Ganjil Tahun 2023-2024</option>
 
 	</select>
-                &nbsp; Total Records : <span id="lbljmlrec" style="display:inline-block;color:Black;font-size:12px;width:150px;"></span>
-              </td>
-           </tr>
+                </td>
+               </tr>
+               </table>
+               <span id="lbl_ls" style="color:Black;font-size:12px;font-weight:normal;"><br>Belum Ada Data Pengajuan Remedial.</span>
            
-        </table>
-        <br />
-       <input type="submit" name="btnprev" value="&lt; Prev" id="btnprev" style="width:55px;" />
-	   <input type="submit" name="btnnext" value="Next >" id="btnnext" style="width:55px;" />
-   			<table style='font-size:12px' cellpadding='4' cellspacing='2px' border='0px' width='99%'><tr bgcolor='#cccccc'><td align='center'  valign='center'><b>No</b></td><th width='8px'>Pilih</th><td align='center'  valign='center'><b>Waktu</b></td><td align='center'  valign='center'><b>Pesan</b></td><td align='center'  valign='center'><b>Status</b></td></tr><tr ><td align='center' valign='top' colspan='3'>Tidak ada riwayat konsultasi</td></tr></table>
-        <br />
-       <input type="submit" name="btnprev2" value="&lt; Prev" id="btnprev2" style="width:55px;" />
-	   <input type="submit" name="btnnext2" value="Next >" id="btnnext2" style="width:55px;" />
-  
 </div>
-  
-  
-  
-</div>
-</form>
+           
+           
+           
+           <hr />
+        </div>
+        
+        
+        
+     </form>
 </center>
-<script>
-$( document ).ready(function() {
-    var elmnt = document.getElementById("fokus");
-    elmnt.scrollIntoView();
-});
-</script>
 			   </div>
 			 </td>
 		  </tr>

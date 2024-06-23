@@ -23,7 +23,7 @@
   <div id="main">
         <div id="header">
 		<br>  
-		Selasa, 18 Juni 2024
+		Minggu, 23 Juni 2024
 	</div>
 	<div id="judul">
           <b>LINTAR MAHASISWA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
@@ -92,28 +92,15 @@
 			 </td>
 		     <td width="80%">
 	           <div id="isimu_knn">
-                   <link href="../css/jquery-ui.css" rel="stylesheet" />
-<script src="../js/jquery.ui.datepicker-id.js"></script>
-<script src="../js/jquery-1.8.2.js"></script>
-<script src="../js/jquery-ui-1.9.0.custom.js"></script>
-
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_awal").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
-    });
-</script>
-
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_akhir").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
+                   <script type="text/javascript" language="javascript" src="../js/jquery-1.10.js"></script>
+<script type="text/javascript" language="javascript" src="../js/jquery.fancybox.js"></script>
+<link rel="stylesheet" href="../css/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".fancybox").fancybox({
+            openEffect: 'none',
+            closeEffect: 'none'
+        });
     });
 </script>
 
@@ -126,103 +113,55 @@
 </script>
 
 
+
+
 <center>
-<form method="post" action="./konsul_psikologi.aspx" id="ctl00">
+<form method="post" action="./wis_status.aspx" id="ctl00">
 <div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTIyOTM0NDEwOQ9kFgJmD2QWBAIBD2QWAgIGDxBkDxYBZhYBEAUOLS1UaWRhayBBZGEgLS0FATBnZGQCAw8PFgIeB1Zpc2libGVoZBYCAgEPDxYCHgRUZXh0ZWRkZNEn6lxDEvDIpb1gTKjPhfZDbvH4tL7CVFBrnlyPrLFt" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MDkwMzk5NjIPZBYCZg9kFgICAw9kFgQCAQ8PFgIeBFRleHQFBTIwMjMxZGQCAw8PFgIfAAVYQW5kYSBiZWx1bSBtZWxha3VrYW4gcGVuZGFmdGFyYW4sIHNpbGFoa2FuIGlzaSBmb3JtIG1lbGFsdWkgbWVudSBXaXN1ZGEtUGVuZGFmdGFyYW4uPGJyPmRkZGb7ripSYmN08Qj34q8mlcgPjxJcRNk74eF1cgHdTdvJ" />
 </div>
 
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['ctl00'];
-if (!theForm) {
-    theForm = document.ctl00;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
-
 <div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="392DB247" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA23DLarkVDhMNmQcuZmDaKysbbCQGPoadihSGgXxueJ/LpK31NlVSnClBvCk6e5DiQKr7N9RG7ZGoZbEOGklTTKV2vl8pRjXNov3SqYmOMQu1drnpZJd0L5e0EGp92KfWjOyf7fJ3+Msv45BzYDOiys0TaP2htkFIn4avcjRH8w4E01n0GCjr00O3cJ2rXOYWwAxKWD7wWAzCMJHKgnsq56lYDNBX4s0F2CUjyiUoSSv6FgE8XHRdSiCZjRtWdcEer0c1BkQ67ftA0YqHnrjfao7B5mBW4RBc+8Hk4DIzyLRBe3VUx8MYMc3p6O6QJ+dF8=" />
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C7553009" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALfA3Cf1fycaOSZbGFaz6rti0ylNr2Mb4eHLSXX+rZI0t30VQ52LBFwzvJq0Ah+9eZ+cIxqplqOtYWjVtUwYyKG" />
 </div>  
 <div id="isimu_knn_jdl">
- <b>KONSULTASI PSIKOLOGI - KONSULTASI ONLINE</b>
+ <b>WISUDA - STATUS PENDAFTARAN WISUDA</b>
 </div>
 <div id="isimu_knn_isi">
-  <div id="Pnlls" style="width:100%;">
+    <div id="Pnlttp" style="width:100%;">
 	
-   	<hr />
-	<h2>Layanan ini hanya untuk konsultasi masalah psikologis.<br> 
-	Untuk konsultasi akademik, silakan melalui Menu Konsultasi PA atau menghubungi Prodi masing-masing</h2>
-    <input type="submit" name="btnbaru" value="Konsultasi Baru" id="btnbaru" />
-    <input type="submit" name="btndetail" value="Lihat Riwayat" id="btndetail" />
-    <hr />
-    	<table width="100%" style="font-size:12px" cellpadding="2" cellspacing="2">
-           
-           <tr>
-               <td class="td-kiri">Cari Kata Kunci</td>
-               <td class="td-kanan">
-                   <input name="txt_cari" type="text" maxlength="50" id="txt_cari" name="txt_cari" placeholder="Kata Kunci" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri">Cari Tanggal</td>
-               <td class="td-kanan">
-                   <input name="tgl_awal" type="text" maxlength="50" id="tgl_awal" name="tgl_awal" placeholder="Tanggal Awal" /> s.d
-                   <input name="tgl_akhir" type="text" maxlength="50" id="tgl_akhir" name="tgl_akhir" placeholder="Tanggal Akhir" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri"></td>
-               <td class="td-kanan">
-                   <input type="submit" name="btncari" value="Cari" id="btncari" style="width:75px;" />
-               </td>
-           </tr>
-           <tr>
-              <td class="td-kiri">Halaman</td>
-              <td class="td-kanan">
-   		        <select name="drophal" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;drophal\&#39;,\&#39;\&#39;)&#39;, 0)" id="drophal" style="font-family:Verdana;font-size:12px;">
-		<option value="0">--Tidak Ada --</option>
+          <hr>
+              <span id="lbl_info"></span> </h2>  
+          <hr>
+     
+</div>
 
-	</select>
-                &nbsp; Total Records : <span id="lbljmlrec" style="display:inline-block;color:Black;font-size:12px;width:150px;"></span>
-              </td>
-           </tr>
-           
+    <div id="Pnlls" style="width:90%;">
+	
+
+        <table width="100%" cellpading="4" cellspacing="2" border=1 bordercolor="#FFFFFF" style="font-size:12px;border-collapse:collapse" >
+            <tr>
+                <td bgcolor="#AED6F1" valign="top" width="75%>
+					Th. Akademik Wisuda : <span id="lblthakdk" style="font-weight:bold;">20231</span>
+				</td>
+            </tr>
+			<tr>
+                <td bgcolor="#AED6F1" valign="top" width="75%>
+					
+                    <span id="lblsts" style="color:Black;font-size:12px;font-weight:bold;">Anda belum melakukan pendaftaran, silahkan isi form melalui menu Wisuda-Pendaftaran.<br></span>
+                </td>
+            </tr>
         </table>
         <br />
-       <input type="submit" name="btnprev" value="&lt; Prev" id="btnprev" style="width:55px;" />
-	   <input type="submit" name="btnnext" value="Next >" id="btnnext" style="width:55px;" />
-   			<table style='font-size:12px' cellpadding='4' cellspacing='2px' border='0px' width='99%'><tr bgcolor='#cccccc'><td align='center'  valign='center'><b>No</b></td><th width='8px'>Pilih</th><td align='center'  valign='center'><b>Waktu</b></td><td align='center'  valign='center'><b>Pesan</b></td><td align='center'  valign='center'><b>Status</b></td></tr><tr ><td align='center' valign='top' colspan='3'>Tidak ada riwayat konsultasi</td></tr></table>
-        <br />
-       <input type="submit" name="btnprev2" value="&lt; Prev" id="btnprev2" style="width:55px;" />
-	   <input type="submit" name="btnnext2" value="Next >" id="btnnext2" style="width:55px;" />
-  
+		<input type="submit" name="btnCetak" value="Cetak Formulir/Bukti Daftar" id="btnCetak" style="background:#222222;color:#ffffff;border:none;border-radius:5px;padding:6px 15px 6px 15px;font-size:16px;cursor:pointer" />
+    
 </div>
-  
-  
-  
 </div>
 </form>
 </center>
-<script>
-$( document ).ready(function() {
-    var elmnt = document.getElementById("fokus");
-    elmnt.scrollIntoView();
-});
-</script>
+
 			   </div>
 			 </td>
 		  </tr>

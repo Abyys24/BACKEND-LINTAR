@@ -23,7 +23,7 @@
   <div id="main">
         <div id="header">
 		<br>  
-		Selasa, 18 Juni 2024
+		Minggu, 23 Juni 2024
 	</div>
 	<div id="judul">
           <b>LINTAR MAHASISWA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
@@ -92,31 +92,7 @@
 			 </td>
 		     <td width="80%">
 	           <div id="isimu_knn">
-                   <link href="../css/jquery-ui.css" rel="stylesheet" />
-<script src="../js/jquery.ui.datepicker-id.js"></script>
-<script src="../js/jquery-1.8.2.js"></script>
-<script src="../js/jquery-ui-1.9.0.custom.js"></script>
-
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_awal").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
-    });
-</script>
-
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_akhir").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
-    });
-</script>
-
+                   
 
 <script language="JavaScript">
   function psn()  
@@ -127,102 +103,42 @@
 
 
 <center>
-<form method="post" action="./konsul_psikologi.aspx" id="ctl00">
+    <form method="post" action="./info_uk.aspx" id="ctl00">
 <div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTIyOTM0NDEwOQ9kFgJmD2QWBAIBD2QWAgIGDxBkDxYBZhYBEAUOLS1UaWRhayBBZGEgLS0FATBnZGQCAw8PFgIeB1Zpc2libGVoZBYCAgEPDxYCHgRUZXh0ZWRkZNEn6lxDEvDIpb1gTKjPhfZDbvH4tL7CVFBrnlyPrLFt" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTU2ODMwNjA1OQ9kFgJmD2QWAgIDDw8WAh4HVmlzaWJsZWhkZGS+COeFMxPgSite8LFHX82oP3Posi2bJsxK09Y2Udsrjw==" />
 </div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['ctl00'];
-if (!theForm) {
-    theForm = document.ctl00;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
 
 <div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="392DB247" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA23DLarkVDhMNmQcuZmDaKysbbCQGPoadihSGgXxueJ/LpK31NlVSnClBvCk6e5DiQKr7N9RG7ZGoZbEOGklTTKV2vl8pRjXNov3SqYmOMQu1drnpZJd0L5e0EGp92KfWjOyf7fJ3+Msv45BzYDOiys0TaP2htkFIn4avcjRH8w4E01n0GCjr00O3cJ2rXOYWwAxKWD7wWAzCMJHKgnsq56lYDNBX4s0F2CUjyiUoSSv6FgE8XHRdSiCZjRtWdcEer0c1BkQ67ftA0YqHnrjfao7B5mBW4RBc+8Hk4DIzyLRBe3VUx8MYMc3p6O6QJ+dF8=" />
-</div>  
-<div id="isimu_knn_jdl">
- <b>KONSULTASI PSIKOLOGI - KONSULTASI ONLINE</b>
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CB2A67E5" />
 </div>
-<div id="isimu_knn_isi">
-  <div id="Pnlls" style="width:100%;">
+        <div id="isimu_knn_jdl">
+            <b>UANG KULIAH - INFORMASI</b>
+        </div>
+        <div id="isimu_knn_isi">
+            <div id="Pnl_ls" style="width:100%;">
 	
-   	<hr />
-	<h2>Layanan ini hanya untuk konsultasi masalah psikologis.<br> 
-	Untuk konsultasi akademik, silakan melalui Menu Konsultasi PA atau menghubungi Prodi masing-masing</h2>
-    <input type="submit" name="btnbaru" value="Konsultasi Baru" id="btnbaru" />
-    <input type="submit" name="btndetail" value="Lihat Riwayat" id="btndetail" />
-    <hr />
-    	<table width="100%" style="font-size:12px" cellpadding="2" cellspacing="2">
-           
-           <tr>
-               <td class="td-kiri">Cari Kata Kunci</td>
-               <td class="td-kanan">
-                   <input name="txt_cari" type="text" maxlength="50" id="txt_cari" name="txt_cari" placeholder="Kata Kunci" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri">Cari Tanggal</td>
-               <td class="td-kanan">
-                   <input name="tgl_awal" type="text" maxlength="50" id="tgl_awal" name="tgl_awal" placeholder="Tanggal Awal" /> s.d
-                   <input name="tgl_akhir" type="text" maxlength="50" id="tgl_akhir" name="tgl_akhir" placeholder="Tanggal Akhir" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri"></td>
-               <td class="td-kanan">
-                   <input type="submit" name="btncari" value="Cari" id="btncari" style="width:75px;" />
-               </td>
-           </tr>
-           <tr>
-              <td class="td-kiri">Halaman</td>
-              <td class="td-kanan">
-   		        <select name="drophal" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;drophal\&#39;,\&#39;\&#39;)&#39;, 0)" id="drophal" style="font-family:Verdana;font-size:12px;">
-		<option value="0">--Tidak Ada --</option>
-
-	</select>
-                &nbsp; Total Records : <span id="lbljmlrec" style="display:inline-block;color:Black;font-size:12px;width:150px;"></span>
-              </td>
-           </tr>
-           
-        </table>
-        <br />
-       <input type="submit" name="btnprev" value="&lt; Prev" id="btnprev" style="width:55px;" />
-	   <input type="submit" name="btnnext" value="Next >" id="btnnext" style="width:55px;" />
-   			<table style='font-size:12px' cellpadding='4' cellspacing='2px' border='0px' width='99%'><tr bgcolor='#cccccc'><td align='center'  valign='center'><b>No</b></td><th width='8px'>Pilih</th><td align='center'  valign='center'><b>Waktu</b></td><td align='center'  valign='center'><b>Pesan</b></td><td align='center'  valign='center'><b>Status</b></td></tr><tr ><td align='center' valign='top' colspan='3'>Tidak ada riwayat konsultasi</td></tr></table>
-        <br />
-       <input type="submit" name="btnprev2" value="&lt; Prev" id="btnprev2" style="width:55px;" />
-	   <input type="submit" name="btnnext2" value="Next >" id="btnnext2" style="width:55px;" />
-  
+                <hr />
+                <br />
+                <b>Informasi Untuk mahasiswa tentang VA :</b>
+                <ol style="font-size:12px;">
+                    <li>Untuk seluruh mahasiswa pembayaran melalui VA (Virtual Account)</li>
+                    <li>Fakultas Ekonomi melalui <b>BANK BCA</b></li>
+                    <li>Fakultas Teknik, Kedokteran, Psikologi, FSRD melalui <b>BANK BNI</b></li>
+                    <li>Fakultas Hukum, Fakultas Ilmu Komunikasi (FIKOM), Fakultas Teknologi Informasi (FTI) melalui <b>BANK MANDIRI</b></li>
+                    <li>Catat nomor VA Anda dengan benar sebelum melakukan pembayaran ke Bank.</li>
+                    
+                    <li>Pembayaran melewati tanggal batas bayar dikenakan denda (kecuali semester pendek).</li>
+                    <li>Pembayaran yang sudah dilakukan dapat dilihat di lintar mahasiswa <b>H+1</b> setelah tanggal pembayaran.</li>
+                    <li>Keterlambatan pembayaran registrasi mengakibatkan Anda tidak dapat melakukan pengisian KRRS ONLINE.</li> 
+                </ol>
+                <br />
+                <div style='font-size:12px;'>Data Uang Kuliah: <b>DUNCAN ARIEL (535230063)</b> </div><div style='font-size:12px;'>Tahun Akademik: <b>2024 GANJIL </b></div><table style='font-size:12px' cellpadding='4' cellspacing='1px' border='0px' width='100%'><tr bgcolor='#cccccc'><td align='center' rowspan='2' valign='middle' width='3%'>No</td><td align='center' rowspan='2' valign='middle' width='5%'>Jenis</td><td align='center' rowspan='2' valign='middle' width='15%'>No. Virtual Account</td><td align='center' rowspan='2' valign='middle' width='12%'>Tgl. Batas Bayar</td><td align='center' rowspan='2' valign='middle' width='13%'>Jumlah Tagihan</td><td align='center' rowspan='2' valign='middle' width='15%'>Rincian</td><td align='center' colspan='3' width='30%'>Pembayaran</td><td align='center' rowspan='2' valign='middle' width='7%'>STATUS</td></tr><tr bgcolor='#cccccc'><td align='center' width='5%'>Bank</td><td align='center' width='15%'>Tanggal</td><td align='center' width='10%'>Nominal</td></tr><tr bgcolor='#99CCCC'><td align='center'>1</td><td align='left'>BPP</td><td align='center'>1888853523006310</td><td align='center'>09 Jul 2024</td><td align='right'>8,000,000</td><td align='right'>BPP: Rp. 8,000,000<br>Denda BPP: Rp. 0</td><td align='center'></td><td align='center'></td><td align='center'>0</td><td align='center'>BELUM LUNAS</td></tr><tr bgcolor='#99CCCC'><td align='center'>2</td><td align='left'>SKS</td><td align='center'></td><td align='center'>30 Aug 2024</td><td align='right'>0</td><td align='right'>SKS: Rp. 0<br>Denda SKS: Rp. 0</td><td align='center'></td><td align='center'></td><td align='center'>0</td><td align='center'>-</td></tr></table><br><div style='font-size:12px;'>Tahun Akademik: <b>2023 GENAP </b></div><table style='font-size:12px' cellpadding='4' cellspacing='1px' border='0px' width='100%'><tr bgcolor='#cccccc'><td align='center' rowspan='2' valign='middle' width='3%'>No</td><td align='center' rowspan='2' valign='middle' width='5%'>Jenis</td><td align='center' rowspan='2' valign='middle' width='15%'>No. Virtual Account</td><td align='center' rowspan='2' valign='middle' width='12%'>Tgl. Batas Bayar</td><td align='center' rowspan='2' valign='middle' width='13%'>Jumlah Tagihan</td><td align='center' rowspan='2' valign='middle' width='15%'>Rincian</td><td align='center' colspan='3' width='30%'>Pembayaran</td><td align='center' rowspan='2' valign='middle' width='7%'>STATUS</td></tr><tr bgcolor='#cccccc'><td align='center' width='5%'>Bank</td><td align='center' width='15%'>Tanggal</td><td align='center' width='10%'>Nominal</td></tr><tr bgcolor='#99CCCC'><td align='center'>1</td><td align='left'>BPP</td><td align='center'>1888853523006310</td><td align='center'>25 Jan 2024</td><td align='right'>8,000,000</td><td align='right'>BPP: Rp. 8,000,000<br>Denda BPP: Rp. 0</td><td align='center'>MANDIRI</td><td align='center'>12 Jan 2024</td><td align='center'>8,000,000</td><td align='center'>LUNAS</td></tr><tr bgcolor='#99CCCC'><td align='center'>2</td><td align='left'>SKS (Dispen)</td><td align='center'>1888853523006320</td><td align='center'>31 May 2024</td><td align='right'>8,800,000</td><td align='right'>SKS: Rp. 8,800,000<br>Denda SKS: Rp. 0</td><td align='center' rowspan='1'>MANDIRI</td><td align='center' rowspan='1'>05 May 2024</td><td align='center' rowspan='1'>8,800,000</td><td align='center' rowspan='1'>LUNAS</td></tr></table><br><div style='font-size:12px;'>Tahun Akademik: <b>2023 GANJIL </b></div><table style='font-size:12px' cellpadding='4' cellspacing='1px' border='0px' width='100%'><tr bgcolor='#cccccc'><td align='center' rowspan='2' valign='middle' width='3%'>No</td><td align='center' rowspan='2' valign='middle' width='5%'>Jenis</td><td align='center' rowspan='2' valign='middle' width='15%'>No. Virtual Account</td><td align='center' rowspan='2' valign='middle' width='12%'>Tgl. Batas Bayar</td><td align='center' rowspan='2' valign='middle' width='13%'>Jumlah Tagihan</td><td align='center' rowspan='2' valign='middle' width='15%'>Rincian</td><td align='center' colspan='3' width='30%'>Pembayaran</td><td align='center' rowspan='2' valign='middle' width='7%'>STATUS</td></tr><tr bgcolor='#cccccc'><td align='center' width='5%'>Bank</td><td align='center' width='15%'>Tanggal</td><td align='center' width='10%'>Nominal</td></tr><tr bgcolor='#99CCCC'><td align='center'>1</td><td align='left'>Uang Kuliah Semester 1</td><td align='center'>1888853523006300</td><td align='center'>-</td><td align='right'>16,000,000</td><td align='right'>Uang Kuliah Semester 1: Rp. 16,000,000</td><td align='center'>MANDIRI</td><td align='center'>10 Jul 2023</td><td align='center'>16,000,000</td><td align='center'>LUNAS</td></tr></table><br>
 </div>
-  
-  
-  
-</div>
-</form>
+            
+        </div>
+     </form>
 </center>
-<script>
-$( document ).ready(function() {
-    var elmnt = document.getElementById("fokus");
-    elmnt.scrollIntoView();
-});
-</script>
 			   </div>
 			 </td>
 		  </tr>

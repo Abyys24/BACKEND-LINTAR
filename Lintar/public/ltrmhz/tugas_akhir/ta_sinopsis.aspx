@@ -10,20 +10,22 @@
 </script>
 
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <title>.::LINTAR MAHASISWA::.</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <link href="/ltrmhz/lintarmhz.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/ltrmhz/simpletree.css" />
+     <script type="text/javascript" src="ckeditor/ckeditor.js"></script>  
+    <script type="text/javascript" src="ckeditor/adapters/jquery.js"></script>
 </head>
 <body>
   <center>
   <div id="main">
         <div id="header">
 		<br>  
-		Selasa, 18 Juni 2024
+		Minggu, 23 Juni 2024
 	</div>
 	<div id="judul">
           <b>LINTAR MAHASISWA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
@@ -92,30 +94,70 @@
 			 </td>
 		     <td width="80%">
 	           <div id="isimu_knn">
-                   <link href="../css/jquery-ui.css" rel="stylesheet" />
-<script src="../js/jquery.ui.datepicker-id.js"></script>
-<script src="../js/jquery-1.8.2.js"></script>
-<script src="../js/jquery-ui-1.9.0.custom.js"></script>
+                   
 
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_awal").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
-    });
+<style type="text/css" title="currentStyle">
+    @import "../css/demo_page.css";
+    @import "../css/demo_table_jui.css";
+    @import "../css/jquery-ui-1.8.4.custom.css";
+</style>
+<style>
+#tap_aktif{ 
+    font-size:12px;
+    width:125px;
+    padding:5px;
+    font-weight:bold;
+    background:#373737;
+    color:#ffffff;
+    text-align:center;
+    float:left;
+    overflow:hidden;
+    margin-right:10px;
+}
+#tap{
+    font-size:12px;
+    width:125px;
+    padding:5px;
+    font-weight:bold;
+    background:#dddddd;
+    color:#ffffff;
+    text-align:center;
+    float:left;
+    overflow:hidden;
+    margin-right:10px;
+}
+
+#note{
+    color: #666666;
+    font-size: 12px;
+    padding: 4px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    width: 450px;
+    text-align:left;
+}
+</style>
+
+<script type="text/javascript" language="javascript" src="../js/jquery-1.10.js"></script>
+<script type="text/javascript" language="javascript" src="../js/jquery.fancybox.js"></script>
+<link rel="stylesheet" href="../css/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript">
+    $(".fancybox").fancybox({
+			openEffect: 'elastic',
+            closeEffect: 'elastic',
+            opacity : true,
+            frameWidth: 100,
+            frameHeight:495,
+            hideOnContentClick:false,
+            overlayShow:true,
+			type   :'iframe',
+            arrows  : false
+	});
+	$(".fancybox2").fancybox({
+			openEffect: 'elastic',
+            closeEffect: 'elastic'
+	});
 </script>
 
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_akhir").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
-    });
-</script>
 
 
 <script language="JavaScript">
@@ -126,103 +168,84 @@
 </script>
 
 
-<center>
-<form method="post" action="./konsul_psikologi.aspx" id="ctl00">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTIyOTM0NDEwOQ9kFgJmD2QWBAIBD2QWAgIGDxBkDxYBZhYBEAUOLS1UaWRhayBBZGEgLS0FATBnZGQCAw8PFgIeB1Zpc2libGVoZBYCAgEPDxYCHgRUZXh0ZWRkZNEn6lxDEvDIpb1gTKjPhfZDbvH4tL7CVFBrnlyPrLFt" />
-</div>
+<script language="JavaScript">
+    function psnsimpan() {
+        return confirm("Anda Yakin ?");
+    }
+</script>
+
 
 <script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['ctl00'];
-if (!theForm) {
-    theForm = document.ctl00;
+
+  function psn()  
+   {
+      return confirm("Anda Yakin ?");
+   }
+
+
+function js_clock(){
+	
+	var clock_time = new Date();
+	var clock_hours = clock_time.getHours();
+	var clock_minutes = clock_time.getMinutes();
+	var clock_seconds = clock_time.getSeconds();
+	var clock_suffix = "";
+	
+
+	if (clock_hours < 10){
+clock_hours = "0" + clock_hours;
+	}
+
+	if (clock_minutes < 10){
+clock_minutes = "0" + clock_minutes;
+	}
+
+	if (clock_seconds < 10){
+clock_seconds = "0" + clock_seconds;
+	}
+
+	var clock_div = document.getElementById('js_clock');
+	clock_div.innerHTML = clock_hours + ":" + clock_minutes + ":" + clock_seconds + " " + clock_suffix;
+	setTimeout("js_clock()", 1000);
 }
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
+
+js_clock();
 </script>
 
+<center>
+    <form method="post" action="./ta_sinopsis.aspx" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
 
 <div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="392DB247" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA23DLarkVDhMNmQcuZmDaKysbbCQGPoadihSGgXxueJ/LpK31NlVSnClBvCk6e5DiQKr7N9RG7ZGoZbEOGklTTKV2vl8pRjXNov3SqYmOMQu1drnpZJd0L5e0EGp92KfWjOyf7fJ3+Msv45BzYDOiys0TaP2htkFIn4avcjRH8w4E01n0GCjr00O3cJ2rXOYWwAxKWD7wWAzCMJHKgnsq56lYDNBX4s0F2CUjyiUoSSv6FgE8XHRdSiCZjRtWdcEer0c1BkQ67ftA0YqHnrjfao7B5mBW4RBc+8Hk4DIzyLRBe3VUx8MYMc3p6O6QJ+dF8=" />
-</div>  
-<div id="isimu_knn_jdl">
- <b>KONSULTASI PSIKOLOGI - KONSULTASI ONLINE</b>
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B67BFEDB" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAANeh8EXjTS6NdMxBzR0W/2AxML5Qxl+g5py6Blrx+6Osw1eStlJ58cTtm1b88P5WkZR9ji4P+fp59qCqDd40UohAUyl163DXw1o0DB0sGSoTA==" />
 </div>
-<div id="isimu_knn_isi">
-  <div id="Pnlls" style="width:100%;">
+        <div id="isimu_knn_jdl">
+            <b>TUGAS AKHIR - SINOPSIS TUGAS AKHIR</b>
+        </div>
+        <div id="isimu_knn_isi">
+            <hr />
+            <div id="Pnl_ls" style="width:100%;">
 	
-   	<hr />
-	<h2>Layanan ini hanya untuk konsultasi masalah psikologis.<br> 
-	Untuk konsultasi akademik, silakan melalui Menu Konsultasi PA atau menghubungi Prodi masing-masing</h2>
-    <input type="submit" name="btnbaru" value="Konsultasi Baru" id="btnbaru" />
-    <input type="submit" name="btndetail" value="Lihat Riwayat" id="btndetail" />
-    <hr />
-    	<table width="100%" style="font-size:12px" cellpadding="2" cellspacing="2">
-           
-           <tr>
-               <td class="td-kiri">Cari Kata Kunci</td>
-               <td class="td-kanan">
-                   <input name="txt_cari" type="text" maxlength="50" id="txt_cari" name="txt_cari" placeholder="Kata Kunci" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri">Cari Tanggal</td>
-               <td class="td-kanan">
-                   <input name="tgl_awal" type="text" maxlength="50" id="tgl_awal" name="tgl_awal" placeholder="Tanggal Awal" /> s.d
-                   <input name="tgl_akhir" type="text" maxlength="50" id="tgl_akhir" name="tgl_akhir" placeholder="Tanggal Akhir" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri"></td>
-               <td class="td-kanan">
-                   <input type="submit" name="btncari" value="Cari" id="btncari" style="width:75px;" />
-               </td>
-           </tr>
-           <tr>
-              <td class="td-kiri">Halaman</td>
-              <td class="td-kanan">
-   		        <select name="drophal" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;drophal\&#39;,\&#39;\&#39;)&#39;, 0)" id="drophal" style="font-family:Verdana;font-size:12px;">
-		<option value="0">--Tidak Ada --</option>
+                <input type="submit" name="btninput" value="Input Sinopsis" id="btninput" disabled="disabled" class="aspNetDisabled" />
+                <input type="submit" name="btncetak" value="Cetak Sinopsis" id="btncetak" disabled="disabled" class="aspNetDisabled" />
+               <hr />
+               <span id="lbl_ls" style="display:inline-block;color:Black;font-size:12px;font-weight:normal;width:550px;"><table width='80%' cellpadding='2' cellspacing='1' style='font-size:12px'><tr><td bgcolor='#669999' width='175px'>Nama</td><td bgcolor='#6699CC' width='1px'>:</td><td bgcolor='#99CCCC'>DUNCAN ARIEL</td></tr><tr><td bgcolor='#669999' width='175px'>Nomor Pokok Mahasiswa</td><td bgcolor='#6699CC' width='1px'>:</td><td bgcolor='#99CCCC'>535230063</td></tr><tr><td bgcolor='#669999' width='175px'>Fakultas/Program Studi</td><td bgcolor='#6699CC' width='1px'>:</td><td bgcolor='#99CCCC'>Fakultas Teknologi Informasi/TEKNIK INFORMATIKA       </td></tr><tr><td bgcolor='#669999' width='175px'>Alamat</td><td bgcolor='#6699CC' width='1px'>:</td><td bgcolor='#99CCCC'>TOWN HOUSE EMERALD NO 35 BGM PIK                                                                     KOTA JAKARTA UTARA                                 14470</td></tr><tr><td bgcolor='#669999' width='175px'>Nomor Telepon</td><td bgcolor='#6699CC' width='1px'>:</td><td bgcolor='#99CCCC'>                 081283961889   </td></tr><tr><td bgcolor='#669999' width='175px'>Tahun Akademik</td><td bgcolor='#6699CC' width='1px'>:</td><td bgcolor='#99CCCC'>/1</td></tr></table></span>
+               <hr />
+               <span id="lbl_ta" style="display:inline-block;color:Black;font-size:12px;font-weight:normal;width:550px;">Data Tugas Akhir anda belum ada atau belum dilaporkan oleh Prodi</span>
+               <br> 
+               
+            
+</div>
 
-	</select>
-                &nbsp; Total Records : <span id="lbljmlrec" style="display:inline-block;color:Black;font-size:12px;width:150px;"></span>
-              </td>
-           </tr>
-           
-        </table>
-        <br />
-       <input type="submit" name="btnprev" value="&lt; Prev" id="btnprev" style="width:55px;" />
-	   <input type="submit" name="btnnext" value="Next >" id="btnnext" style="width:55px;" />
-   			<table style='font-size:12px' cellpadding='4' cellspacing='2px' border='0px' width='99%'><tr bgcolor='#cccccc'><td align='center'  valign='center'><b>No</b></td><th width='8px'>Pilih</th><td align='center'  valign='center'><b>Waktu</b></td><td align='center'  valign='center'><b>Pesan</b></td><td align='center'  valign='center'><b>Status</b></td></tr><tr ><td align='center' valign='top' colspan='3'>Tidak ada riwayat konsultasi</td></tr></table>
-        <br />
-       <input type="submit" name="btnprev2" value="&lt; Prev" id="btnprev2" style="width:55px;" />
-	   <input type="submit" name="btnnext2" value="Next >" id="btnnext2" style="width:55px;" />
-  
-</div>
-  
-  
-  
-</div>
-</form>
+
+            <hr />
+        </div>
+     </form>
 </center>
-<script>
-$( document ).ready(function() {
-    var elmnt = document.getElementById("fokus");
-    elmnt.scrollIntoView();
-});
-</script>
 			   </div>
 			 </td>
 		  </tr>

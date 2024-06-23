@@ -23,7 +23,7 @@
   <div id="main">
         <div id="header">
 		<br>  
-		Selasa, 18 Juni 2024
+		Minggu, 23 Juni 2024
 	</div>
 	<div id="judul">
           <b>LINTAR MAHASISWA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
@@ -92,31 +92,7 @@
 			 </td>
 		     <td width="80%">
 	           <div id="isimu_knn">
-                   <link href="../css/jquery-ui.css" rel="stylesheet" />
-<script src="../js/jquery.ui.datepicker-id.js"></script>
-<script src="../js/jquery-1.8.2.js"></script>
-<script src="../js/jquery-ui-1.9.0.custom.js"></script>
-
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_awal").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
-    });
-</script>
-
-<script type="text/javascript"> 
-    $(document).ready(function(){
-       $("#tgl_akhir").datepicker({
-           dateFormat: "dd/mm/yy",
-           changeMonth: true,
-           changeYear: true
-       });
-    });
-</script>
-
+                   
 
 <script language="JavaScript">
   function psn()  
@@ -126,103 +102,95 @@
 </script>
 
 
-<center>
-<form method="post" action="./konsul_psikologi.aspx" id="ctl00">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTIyOTM0NDEwOQ9kFgJmD2QWBAIBD2QWAgIGDxBkDxYBZhYBEAUOLS1UaWRhayBBZGEgLS0FATBnZGQCAw8PFgIeB1Zpc2libGVoZBYCAgEPDxYCHgRUZXh0ZWRkZNEn6lxDEvDIpb1gTKjPhfZDbvH4tL7CVFBrnlyPrLFt" />
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['ctl00'];
-if (!theForm) {
-    theForm = document.ctl00;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
+<script language="JavaScript">
+    function psnsimpan() {
+        return confirm("Anda Yakin ?");
     }
-}
-//]]>
 </script>
 
+
+<script language="JaRegolScript">
+    function psnsimpan() {
+        return confirm("Anda Yakin ?");
+    }
+</script>
+
+  <style>
+   	#tap_aktif{ 
+   		font-size:12px;
+		width:170px;
+		padding:5px;
+		font-weight:bold;
+		background:#373737;
+		color:#ffffff;
+		text-align:center;
+		float:left;
+		overflow:hidden;
+		margin-right:10px;
+	}
+	#tap{
+   		font-size:12px;
+		width:170px;
+		padding:5px;
+		font-weight:bold;
+		background:#dddddd;
+		color:#ffffff;
+		text-align:center;
+		float:left;
+		overflow:hidden;
+		margin-right:10px;
+	}
+	
+	#note{
+		color: #666666;
+		font-size: 12px;
+		padding: 4px;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+		width: 450px;
+		text-align:left;
+	}
+
+   </style>
+
+<center>
+    <form method="post" action="./cutiol_ajuan.aspx" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc3OTIyNTU0OQ9kFgJmD2QWCgIBD2QWBgIBDw9kFgIeB29uY2xpY2sFGGphdmFzY3JpcHQ6cmV0dXJuIHBzbigpO2QCAg8PFgIeBFRleHQFPDIwMjMyLVNlbWVzdGVyIEdlbmFwIDIwMjMvMjAyNC0xLzMwLzIwMjQtMi8yNy8yMDI0LTIvMjcvMjAyNGRkAgMPDxYCHwEFkw48dGFibGUgd2lkdGg9JzgwJScgY2VsbHBhZGRpbmc9JzInIGNlbGxzcGFjaW5nPScxJyBzdHlsZT0nZm9udC1zaXplOjEycHgnPjx0ciBiZ2NvbG9yPScjNjY2NjY2JyBjb2xvcj0nI0ZGRkZGRic+PHRkIGNvbHNwYW49JzMnID5JbmZvcm1hc2kgUHJpYmFkaTwvdGQ+PC90cj48dHI+PHRkIGJnY29sb3I9JyM2Njk5OTknIHdpZHRoPScxNzVweCc+TmFtYTwvdGQ+PHRkIGJnY29sb3I9JyM5OUNDQ0MnIHdpZHRoPScxcHgnPjo8L3RkPjx0ZCBiZ2NvbG9yPScjOTlDQ0NDJz5EVU5DQU4gQVJJRUw8L3RkPjwvdHI+PHRyPjx0ZCBiZ2NvbG9yPScjNjY5OTk5JyB3aWR0aD0nMTc1cHgnPk5vbW9yIFBva29rIE1haGFzaXN3YTwvdGQ+PHRkIGJnY29sb3I9JyM5OUNDQ0MnIHdpZHRoPScxcHgnPjo8L3RkPjx0ZCBiZ2NvbG9yPScjOTlDQ0NDJz41MzUyMzAwNjM8L3RkPjwvdHI+PHRyPjx0ZCBiZ2NvbG9yPScjNjY5OTk5JyB3aWR0aD0nMTc1cHgnPkZha3VsdGFzL1Byb2dyYW0gU3R1ZGk8L3RkPjx0ZCBiZ2NvbG9yPScjOTlDQ0NDJyB3aWR0aD0nMXB4Jz46PC90ZD48dGQgYmdjb2xvcj0nIzk5Q0NDQyc+VEVLTk9MT0dJIElORk9STUFTSSAvIFRFS05JSyBJTkZPUk1BVElLQSAgICAgICA8L3RkPjwvdHI+PHRkIGJnY29sb3I9JyM2Njk5OTknIHdpZHRoPScxNzVweCc+QWxhbWF0PC90ZD48dGQgYmdjb2xvcj0nIzk5Q0NDQycgd2lkdGg9JzFweCc+OjwvdGQ+PHRkIGJnY29sb3I9JyM5OUNDQ0MnPlRPV04gSE9VU0UgRU1FUkFMRCBOTyAzNSBCR00gUElLICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgS09UQSBKQUtBUlRBIFVUQVJBICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTQ0NzA8L3RkPjwvdHI+PHRkIGJnY29sb3I9JyM2Njk5OTknIHdpZHRoPScxNzVweCc+VGVsZXBvbi9IUDwvdGQ+PHRkIGJnY29sb3I9JyM5OUNDQ0MnIHdpZHRoPScxcHgnPjo8L3RkPjx0ZCBiZ2NvbG9yPScjOTlDQ0NDJz4tICAgICAgICAgICAgICAgLzA4MTI4Mzk2MTg4OSAgIDwvdGQ+PC90cj48dGQgYmdjb2xvcj0nIzY2OTk5OScgd2lkdGg9JzE3NXB4Jz5FbWFpbDwvdGQ+PHRkIGJnY29sb3I9JyM5OUNDQ0MnIHdpZHRoPScxcHgnPjo8L3RkPjx0ZCBiZ2NvbG9yPScjOTlDQ0NDJz5kdW5jYW4uNTM1MjMwMDYzQHN0dS51bnRhci5hYy5pZCAgICAgICAgICAgICAgICAgIDwvdGQ+PC90cj48L3RhYmxlPjxiciAvPjx0YWJsZSB3aWR0aD0nODAlJyBjZWxscGFkZGluZz0nMicgY2VsbHNwYWNpbmc9JzEnIHN0eWxlPSdmb250LXNpemU6MTJweCc+PHRyIGJnY29sb3I9JyM2NjY2NjYnIGNvbG9yPScjRkZGRkZGJz48dGQgY29sc3Bhbj0nMycgPkluZm9ybWFzaSBUYWh1biBBa2FkZW1pazwvdGQ+PC90cj48dHI+PHRkIGJnY29sb3I9JyM2Njk5OTknIHdpZHRoPScxNzVweCc+VGFodW4gQWthZGVtaWsgUGVuZ2FqdWFuPC90ZD48dGQgYmdjb2xvcj0nIzk5Q0NDQycgd2lkdGg9JzFweCc+OjwvdGQ+PHRkIGJnY29sb3I9JyM5OUNDQ0MnPjIwMjMyLVNlbWVzdGVyIEdlbmFwIDIwMjMvMjAyNDwvdGQ+PC90cj48dHI+PHRkIGJnY29sb3I9JyM2Njk5OTknIHdpZHRoPScxNzVweCc+VGFuZ2dhbCBCdWthIFBlbmdhanVhbjwvdGQ+PHRkIGJnY29sb3I9JyM5OUNDQ0MnIHdpZHRoPScxcHgnPjo8L3RkPjx0ZCBiZ2NvbG9yPScjOTlDQ0NDJz5zZC4gMjcvMDIvMjAyNDwvdGQ+PC90cj48L3RhYmxlPjxicj5EYWZ0YXIgUGVuZ2FqdWFuIEN1dGkgQWthZGVtaWs8YnI+PGJyPkJlbHVtIGFkYSBkYXRhIHBlbmdhanVhbiBjdXRpIGFrYWRlbWlrLmRkAgMPDxYCHgdWaXNpYmxlaGRkAgUPDxYCHwJoZGQCBw8PFgIfAmhkZAIJDw8WAh8CaGQWAgIJDw9kFgIfAAUYamF2YXNjcmlwdDpyZXR1cm4gcHNuKCk7ZGQ4f3ztJt0ZBryg+O9ePQsYmjhvO4ZIsYkrBGqn0L7yXw==" />
+</div>
 
 <div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="392DB247" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA23DLarkVDhMNmQcuZmDaKysbbCQGPoadihSGgXxueJ/LpK31NlVSnClBvCk6e5DiQKr7N9RG7ZGoZbEOGklTTKV2vl8pRjXNov3SqYmOMQu1drnpZJd0L5e0EGp92KfWjOyf7fJ3+Msv45BzYDOiys0TaP2htkFIn4avcjRH8w4E01n0GCjr00O3cJ2rXOYWwAxKWD7wWAzCMJHKgnsq56lYDNBX4s0F2CUjyiUoSSv6FgE8XHRdSiCZjRtWdcEer0c1BkQ67ftA0YqHnrjfao7B5mBW4RBc+8Hk4DIzyLRBe3VUx8MYMc3p6O6QJ+dF8=" />
-</div>  
-<div id="isimu_knn_jdl">
- <b>KONSULTASI PSIKOLOGI - KONSULTASI ONLINE</b>
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F99F1F17" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAO14hDUMQsHsWQLuNy4+8a/6I7qwBL6vVJMZk2m2epfUy0J/+hWkCK1eHQnnx9H2toHFWXpFj58gNMM+5Htp37s0UIKzDn9tbqcqurRAsNRUA==" />
 </div>
-<div id="isimu_knn_isi">
-  <div id="Pnlls" style="width:100%;">
+        <div id="isimu_knn_jdl">
+            <b>CUTI ONLINE - AJUAN CUTI</b>
+        </div>
+        <div id="isimu_knn_isi">
+            <hr />
+            <div id="Pnl_ls" style="width:100%;">
 	
-   	<hr />
-	<h2>Layanan ini hanya untuk konsultasi masalah psikologis.<br> 
-	Untuk konsultasi akademik, silakan melalui Menu Konsultasi PA atau menghubungi Prodi masing-masing</h2>
-    <input type="submit" name="btnbaru" value="Konsultasi Baru" id="btnbaru" />
-    <input type="submit" name="btndetail" value="Lihat Riwayat" id="btndetail" />
-    <hr />
-    	<table width="100%" style="font-size:12px" cellpadding="2" cellspacing="2">
-           
-           <tr>
-               <td class="td-kiri">Cari Kata Kunci</td>
-               <td class="td-kanan">
-                   <input name="txt_cari" type="text" maxlength="50" id="txt_cari" name="txt_cari" placeholder="Kata Kunci" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri">Cari Tanggal</td>
-               <td class="td-kanan">
-                   <input name="tgl_awal" type="text" maxlength="50" id="tgl_awal" name="tgl_awal" placeholder="Tanggal Awal" /> s.d
-                   <input name="tgl_akhir" type="text" maxlength="50" id="tgl_akhir" name="tgl_akhir" placeholder="Tanggal Akhir" />
-               </td>
-           </tr>
-           <tr>
-               <td class="td-kiri"></td>
-               <td class="td-kanan">
-                   <input type="submit" name="btncari" value="Cari" id="btncari" style="width:75px;" />
-               </td>
-           </tr>
-           <tr>
-              <td class="td-kiri">Halaman</td>
-              <td class="td-kanan">
-   		        <select name="drophal" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;drophal\&#39;,\&#39;\&#39;)&#39;, 0)" id="drophal" style="font-family:Verdana;font-size:12px;">
-		<option value="0">--Tidak Ada --</option>
+                <input type="submit" name="btnajuan" value="Ajukan Cuti" id="btnajuan" /> 
+                <input type="submit" name="btnbatalkan" value="Batalkan Pengajuan Cuti" onclick="javascript:return psn();" id="btnbatalkan" />
+                
+               <hr />
+                 <span id="lbllsajuan" style="display:inline-block;color:Black;font-size:13px;width:900px;"><table width='80%' cellpadding='2' cellspacing='1' style='font-size:12px'><tr bgcolor='#666666' color='#FFFFFF'><td colspan='3' >Informasi Pribadi</td></tr><tr><td bgcolor='#669999' width='175px'>Nama</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>DUNCAN ARIEL</td></tr><tr><td bgcolor='#669999' width='175px'>Nomor Pokok Mahasiswa</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>535230063</td></tr><tr><td bgcolor='#669999' width='175px'>Fakultas/Program Studi</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>TEKNOLOGI INFORMASI / TEKNIK INFORMATIKA       </td></tr><td bgcolor='#669999' width='175px'>Alamat</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>TOWN HOUSE EMERALD NO 35 BGM PIK                                                                     KOTA JAKARTA UTARA                                 14470</td></tr><td bgcolor='#669999' width='175px'>Telepon/HP</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>-               /081283961889   </td></tr><td bgcolor='#669999' width='175px'>Email</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>duncan.535230063@stu.untar.ac.id                  </td></tr></table><br /><table width='80%' cellpadding='2' cellspacing='1' style='font-size:12px'><tr bgcolor='#666666' color='#FFFFFF'><td colspan='3' >Informasi Tahun Akademik</td></tr><tr><td bgcolor='#669999' width='175px'>Tahun Akademik Pengajuan</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>20232-Semester Genap 2023/2024</td></tr><tr><td bgcolor='#669999' width='175px'>Tanggal Buka Pengajuan</td><td bgcolor='#99CCCC' width='1px'>:</td><td bgcolor='#99CCCC'>sd. 27/02/2024</td></tr></table><br>Daftar Pengajuan Cuti Akademik<br><br>Belum ada data pengajuan cuti akademik.</span>
+                <br /><br />
+                
+</div>
 
-	</select>
-                &nbsp; Total Records : <span id="lbljmlrec" style="display:inline-block;color:Black;font-size:12px;width:150px;"></span>
-              </td>
-           </tr>
-           
-        </table>
-        <br />
-       <input type="submit" name="btnprev" value="&lt; Prev" id="btnprev" style="width:55px;" />
-	   <input type="submit" name="btnnext" value="Next >" id="btnnext" style="width:55px;" />
-   			<table style='font-size:12px' cellpadding='4' cellspacing='2px' border='0px' width='99%'><tr bgcolor='#cccccc'><td align='center'  valign='center'><b>No</b></td><th width='8px'>Pilih</th><td align='center'  valign='center'><b>Waktu</b></td><td align='center'  valign='center'><b>Pesan</b></td><td align='center'  valign='center'><b>Status</b></td></tr><tr ><td align='center' valign='top' colspan='3'>Tidak ada riwayat konsultasi</td></tr></table>
-        <br />
-       <input type="submit" name="btnprev2" value="&lt; Prev" id="btnprev2" style="width:55px;" />
-	   <input type="submit" name="btnnext2" value="Next >" id="btnnext2" style="width:55px;" />
-  
-</div>
-  
-  
-  
-</div>
-</form>
+              
+            
+              
+              
+            
+              
+
+
+            <hr />
+        </div>
+     </form>
 </center>
-<script>
-$( document ).ready(function() {
-    var elmnt = document.getElementById("fokus");
-    elmnt.scrollIntoView();
-});
-</script>
 			   </div>
 			 </td>
 		  </tr>

@@ -51,3 +51,13 @@ Route::get('/skpi_new', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+use App\Http\Controllers\VaksinController;
+
+Route::get('/wisuda/wis_buktivaksinc19', [VaksinController::class, 'index']);
+Route::post('/wisuda/wis_buktivaksinc19', [VaksinController::class, 'upload']);
+Route::group(['middleware' => 'web'], function () {
+    // routes here
+});
+
+

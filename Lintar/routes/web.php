@@ -60,4 +60,15 @@ Route::group(['middleware' => 'web'], function () {
     // routes here
 });
 
+use App\Http\Controllers\PermohonanSuratController;
 
+Route::get('/formulir', [PermohonanSuratController::class, 'create'])->name('formulir');
+Route::post('/formulir', [PermohonanSuratController::class, 'store'])->name('permohonan.store');
+// routes/web.php
+
+use App\Http\Controllers\PermohonanController;
+
+Route::post('/simpan-permohonan', [PermohonanController::class, 'simpanPermohonan'])->name('simpan.permohonan');
+
+
+Route::post('/simpan-permohonan', 'PermohonanController@simpanPermohonan');

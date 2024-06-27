@@ -108,7 +108,7 @@
 </script>
 
 <div>
- <a class="fancybox" rel="gallery1" href="https://registrasi.untar.ac.id/dokumen/foto/2023_2353011402_103096_20230623181909.jpg"><div style="margin:10px;float:left;width:80px;height:80px;border-radius:100%;background:url(https://registrasi.untar.ac.id/dokumen/foto/2023_2353011402_103096_20230623181909.jpg) no-repeat center center;background-size:100%;margin-right:10px;border:1px solid #ddd;">&nbsp;</div></a><div style="margin-top:30px;float:left;font-size:10px;width:100px;font-weight:bold;">DUNCAN ARIEL</div>
+ <a class="fancybox" rel="gallery1" href="https://registrasi.untar.ac.id/dokumen/foto/2023_2353011402_103096_20230623181909.jpg"><div style="margin:10px;float:left;width:80px;height:80px;border-radius:100%;background:url(https://registrasi.untar.ac.id/dokumen/foto/2023_2353011402_103096_20230623181909.jpg) no-repeat center center;background-size:100%;margin-right:10px;border:1px solid #ddd;">&nbsp;</div></a><div style="margin-top:30px;float:left;font-size:10px;width:100px;font-weight:bold;">{{ Auth::user()->name }}</div>
        
  </div>
  <div style="clear:both;border-bottom:1px solid #dddddd;margin-bottom:10px;"></div>

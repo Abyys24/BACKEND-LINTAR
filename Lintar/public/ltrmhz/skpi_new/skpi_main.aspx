@@ -9,6 +9,12 @@
     
     </script>
     
+    <script type="text/javascript">
+        function redirectToNewPage() {
+            window.location.href = "skpi_main1.aspx";
+        }
+    </script>
+    
     
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
     <html>
@@ -215,7 +221,7 @@
     <div id="Pnlls" style="width:700px;">
 	
     <hr>
-    <input type="submit" name="btninput" value="Tambah Kegiatan" id="btninput" />
+    <input type="submit" name="btninput" value="Tambah Kegiatan" id="btninput" onclick="redirectToNewPage(); return false;" />
     <input type="submit" name="btnhps" value="Hapus" onclick="javascript:return psn();" id="btnhps" />    
     <hr>  
     <div class = "tabinator">

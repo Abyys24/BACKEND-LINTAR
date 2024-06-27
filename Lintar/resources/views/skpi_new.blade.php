@@ -79,3 +79,28 @@
 
 
 </body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKPI Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SKPI Website</h1>
+        <button id="view-skpi-button">View SKPI Data</button>
+
+        <div id="skpi-data" style="display: none;">
+            <h2>Your SKPI Data</h2>
+            <p>Name: [Student Name]</p>
+            <p>Student ID: [Student ID]</p>
+            <p>Program of Study: [Program of Study]</p>
+            <p>SKPI Number: [SKPI Number]</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
